@@ -3,9 +3,11 @@
       xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>variable-expression</title>
+    <title>Variable-expression</title>
 </head>
 <body>
+<h1 th:text="#{app.name}"></h1>
+<h2 th:text="#{welcome.message}"></h2>
  <h2>Variable Expression</h2>
  <p>First Name: <strong th:text="${User.firstName}"></strong></p>
  <p>Last Name: <strong th:text="${User.lastName}"></strong></p>
